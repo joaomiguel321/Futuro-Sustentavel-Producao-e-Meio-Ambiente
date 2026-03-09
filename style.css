@@ -1,0 +1,202 @@
+/* Variáveis de cores: verde e cinza */
+:root {
+    --verde-principal: #2e7d32;      /* Verde escuro */
+    --verde-claro: #a5d6a7;          /* Verde claro para fundos */
+    --cinza-escuro: #424242;         /* Cinza para textos */
+    --cinza-claro: #f5f5f5;          /* Cinza claro para fundos */
+    --branco: #ffffff;
+}
+
+/* Reset básico para remover margens e paddings padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--cinza-claro);
+    color: var(--cinza-escuro);
+    line-height: 1.6;
+    padding-top: 60px; /* Espaço para o menu fixo */
+}
+
+/* MENU FIXO */
+.menu {
+    background-color: var(--verde-principal);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+}
+
+.menu a {
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: var(--verde-claro);
+}
+
+/* CABEÇALHO */
+.cabecalho {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: var(--branco);
+    margin: 0 20px 20px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.cabecalho h1 {
+    color: var(--verde-principal);
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    font-size: 1.3rem;
+    color: var(--cinza-escuro);
+    margin-bottom: 10px;
+}
+
+.destaque-2030 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--verde-principal);
+    background-color: var(--verde-claro);
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 30px;
+}
+
+/* SEÇÕES */
+.secao {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.secao h2 {
+    color: var(--verde-principal);
+    font-size: 1.8rem;
+    border-left: 5px solid var(--verde-principal);
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+/* CARTÃO (estilo parecido com slide) */
+.cartao {
+    background-color: var(--branco);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border: 1px solid var(--verde-claro);
+}
+
+.bullet {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* BOTÕES */
+button {
+    background-color: var(--verde-principal);
+    color: var(--branco);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1b5e20; /* tom mais escuro */
+}
+
+/* Classe usada para esconder os parágrafos de impacto/dica */
+.oculto {
+    display: none;
+    margin-top: 15px;
+    padding: 15px;
+    background-color: var(--verde-claro);
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* RODAPÉ */
+.rodape {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--cinza-escuro);
+    color: var(--branco);
+    margin-top: 40px;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+/* Para tablets (largura máxima 768px) */
+@media (max-width: 768px) {
+    .cabecalho h1 {
+        font-size: 1.5rem;
+    }
+    .subtitulo {
+        font-size: 1rem;
+    }
+    .destaque-2030 {
+        font-size: 2rem;
+    }
+    .menu ul {
+        gap: 15px;
+    }
+    .menu a {
+        font-size: 1rem;
+    }
+}
+
+/* Para celulares (largura máxima 480px) */
+@media (max-width: 480px) {
+    body {
+        padding-top: 50px;
+    }
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    .menu a {
+        display: block;
+        padding: 5px;
+    }
+    .cabecalho {
+        margin: 0 10px 10px 10px;
+        padding: 20px;
+    }
+    .secao {
+        padding: 0 10px;
+    }
+    .cartao {
+        padding: 15px;
+    }
+    .bullet {
+        font-size: 1rem;
+    }
+}

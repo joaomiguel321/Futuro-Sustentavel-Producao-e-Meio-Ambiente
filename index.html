@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <!-- Configura a página para se adaptar a qualquer tela (mobile, tablet, desktop) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuro Sustentável</title>
+    <!-- Conecta o arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- MENU DE NAVEGAÇÃO (fixo no topo) -->
+    <nav class="menu">
+        <ul>
+            <li><a href="#revolucao">Revolução Industrial</a></li>
+            <li><a href="#economia">Economia Circular</a></li>
+        </ul>
+    </nav>
+
+    <!-- CABEÇALHO PRINCIPAL COM TÍTULO E SUBTÍTULO -->
+    <header class="cabecalho">
+        <h1>Futuro Sustentável: O Equilíbrio é Possível?</h1>
+        <p class="subtitulo">Da Revolução Industrial à Economia Circular</p>
+        <p class="destaque-2030">2030</p> <!-- Ano de destaque do slide -->
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL: duas seções representando os dois slides -->
+    <main>
+        <!-- SEÇÃO 1: Revolução Industrial (1760) -->
+        <section id="revolucao" class="secao">
+            <h2>Revolução Industrial (1760)</h2>
+            <div class="cartao">
+                <p class="bullet">📈 O início da curva ascendente de CO₂ na atmosfera.</p>
+                <p class="bullet">🌍 A natureza era vista como um estoque infinito de recursos.</p>
+                <p class="bullet">⛏️ A transição para o carvão mineral e o ferro.</p>
+                <p class="bullet">🏭 O surgimento da produção em escala e a urbanização acelerada.</p>
+                <!-- Botão que vai ativar o JavaScript (interatividade) -->
+                <button id="btnImpacto">Ver impacto ambiental</button>
+                <!-- Parágrafo oculto que aparecerá ao clicar no botão -->
+                <p id="impactoOculto" class="oculto">
+                    🔴 Entre 1760 e 1900, as emissões de CO₂ passaram de aproximadamente 0 para quase 2 bilhões de toneladas por ano.
+                </p>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 2: Economia Circular (2030) -->
+        <section id="economia" class="secao">
+            <h2>Economia Circular (2030)</h2>
+            <div class="cartao">
+                <p class="bullet">♻️ Modelo regenerativo: reduzir, reutilizar e reciclar.</p>
+                <p class="bullet">🔄 Fechar o ciclo dos materiais, eliminando resíduos.</p>
+                <p class="bullet">💡 Inovação e sustentabilidade andando juntas.</p>
+                <p class="bullet">🌱 Meta: neutralidade de carbono até 2050.</p>
+                <!-- Botão para outro efeito JavaScript (opcional) -->
+                <button id="btnDica">Dica sustentável</button>
+                <p id="dicaOculta" class="oculto">
+                    💚 Pequenas ações: prefira produtos duráveis, separe o lixo e economize energia.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+        <p>Trabalho escolar - 2º ano Ensino Médio</p>
+    </footer>
+
+    <!-- Conecta o arquivo JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>
